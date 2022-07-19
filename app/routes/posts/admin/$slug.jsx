@@ -30,7 +30,7 @@ export default function Post() {
   const [isEdit, setIsEdit] = useState(false);
 
   return isEdit ? (
-    <Form method="post">
+    <Form method="post" key={post.slug}>
       <p>
         <label>
           Post Title:
